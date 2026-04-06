@@ -1,0 +1,87 @@
+.custom-bg {
+    background-color: #673ab7 !important;
+}
+
+.admin .card{
+    border: 1px solid #673ab7;
+}
+
+.admin .card:hover{
+    background: #e2e2e2;
+    cursor:pointer;
+}
+
+.list-group-item.active {
+    background-color: #673ab7;
+    border-color: #673ab7;
+}
+
+.discount-label{
+    font-size: 12px !important;
+    font-style: italic !important;
+}
+
+.product-card:hover{
+    background: #e2e2e2;
+    cursor: pointer;
+}
+
+
+/*  toast for messages  */
+#toast {
+    text-align: center;
+    max-width: 700px; /* Ensures long messages don't stretch too far */
+    min-width: 300px;
+    width: auto; /* Allows dynamic resizing */
+    position: fixed;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%); /* Centers the toast properly */
+    background: #333;
+    padding: 15px;
+    color: white;
+    z-index: 1;
+    font-size: 18px;
+    visibility: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+#toast.display {
+    visibility: visible;
+    animation: fadeIn 0.5s, fadeOut 0.5s 2.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        bottom: 50px;
+        opacity: 0;
+    }
+    to {
+        bottom: 70px;
+        opacity: 1;
+    } 
+}
+
+@keyframes fadeOut { /* Fixed typo: changed "@keyframe" to "@keyframes" */
+    from {
+        bottom: 70px;
+        opacity: 1;
+    }
+    to {
+        bottom: 50px;
+        opacity: 0;
+    } 
+}
+
+.centered {
+  font-size: 100px;
+  font-family: fantasy;
+  color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
